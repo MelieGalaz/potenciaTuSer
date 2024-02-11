@@ -28,11 +28,9 @@ menuLinks.forEach((link) => {
 });
 /*****************************abrir y cerral el menu hambuerguesa*********************/
 const menuHambueguesa = document.getElementById("mobile-menu");
-const header = document.getElementById("header");
+
 document.getElementById("hamburger").addEventListener("click", () => {
   menuHambueguesa.classList.remove("hidden");
-
-  menuHambueguesa.style.height = "100vh";
 });
 
 document.getElementById("boton-menu-cerrar").addEventListener("click", () => {
