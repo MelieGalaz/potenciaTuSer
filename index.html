@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital@1&family=Roboto+Slab:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="bg-[url('imagenes/fondo2.jpg')] h-screen bg-center ">
+        <nav
+            class=" lg:backdrop-blur-3xl  shadow-2xl flex w-full  lg:items-center  lg:h-24 justify-between  lg:px-9 p-4 ">
+
+            <div class="flex flex-col lg:flex-row relative">
+                <button id="hamburger" class="text-[white] text-[1.3rem] font-medium focus:outline-none lg:hidden">
+                    <i class="fi fi-br-menu-burger"></i>
+
+                </button>
+
+                <ul class="backdrop-blur-3xl lg:backdrop-blur-none hidden flex flex-col   z-10 justify-between
+                    items-center gap-2 mt-[16px]
+                absolute  w-[344px] h-[589px] top-full p-[15px]  lg:h-[52px]  
+              
+                lg:relative lg:flex lg:flex-row lg:gap-4 lg:items-center" id="mobile-menu">
+                    <button id="boton-menu-cerrar"
+                        class=" lg:hidden w-[320px] flex justify-end text-[white] text-[1rem] "><i
+                            class="fi fi-br-cross"></i></button>
+                    <div class="w-[320px] h-[560px] justify-around lg:justify-start flex flex-col 
+                    items-center gap-2 lg:flex-row lg:h-[71px] w-[200px]">
+                        <li>
+                            <a href="#quienSoy" class=" z-11 focus:ring-2 flex text    lg:text-white lg:w-[140px] gap-2
+                            lg:rounded-md px-3 py-2 font-bold lg:text-[1.1rem] lg:font-medium text-[1.5rem] text-[white]
+                            hover:scale-125">
+                                <i class="fi fi-rr-chart-histogram "></i>
+                                Quien soy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#misServicios" class=" z-11 focus:ring-2 flex text    lg:text-white lg:w-[140px] gap-2
+                            lg:rounded-md px-3 py-2 font-bold lg:text-[1.1rem] lg:font-medium text-[1.5rem]
+                            text-[white] hover:scale-125">
+                                <i class=" fi fi-sr-tags"></i>
+                                Mis servicios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contacto" class=" z-11 focus:ring-2 flex text    lg:text-white lg:w-[140px] gap-2
+                            lg:rounded-md px-3 py-2 font-bold lg:text-[1.1rem] lg:font-medium text-[1.5rem]
+                            text-[white] hover:scale-125">
+                                <i class=" fi fi-sr-chart-pie"></i>
+                                Contacto
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <div class="flex flex-col items-center justify-center w-[40vh] h-[70vh] m-auto mt-[100px] gap-3
+        ">
+            <img src="./imagenes/omSinFondo.png" alt="" class="w-[100px] lg:w-[150px]">
+            <h1 class="text-[2.5rem] text-[white] drop-shadow-2xl font-medium font-['Amaranth']">Potencia tu Ser</h1>
+
+            <h2 class="text-[1.7rem] text-[white] drop-shadow-2xl ">Espacio Holístico</h2>
+            <p class="text-[0.9rem] lg:text-[1rem] text-[white] drop-shadow-2xl text-center">Potencia tu Ser Espacio
+                Holístico tiene
+                para
+                ofrecer
+                Sesiones presenciales y/o a distancia de Sanación
+                Emocional y Energética, así como de Autoconocimiento y conexión con tu Propósito.
+
+                Te invito a conocer las herramientas que brindamos tanto para tu sanación, como para tu desarrollo
+                personal y para que las puedas brindar vos también, mediante las formaciones.</p>
+        </div>
+    </header>
+    <main>
+        <section id="quienSoy">
+
+        </section>
+        <section id="misServicios">
+
+        </section>
+        <section id="contacto">
+
+        </section>
+    </main>
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
