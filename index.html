@@ -14,55 +14,59 @@
     <title>Document</title>
 </head>
 
-<body>
-    <header class="bg-[url('imagenes/fondo2.jpg')] h-screen bg-center ">
-        <nav
-            class=" lg:backdrop-blur-3xl  shadow-2xl flex w-full  lg:items-center  lg:h-24 justify-between  lg:px-9 p-4 ">
+<body class="bg-[url('imagenes/fondo2.jpg')] h-screen bg-center ">
+    <header class="relative  ">
+        <nav class=" lg:backdrop-blur-3xl w-full flex items-center  shadow-2xl  h-[7vh] lg:h-24 lg:justify-between 
+            ">
 
-            <div class="flex flex-col lg:flex-row relative">
-                <button id="hamburger" class="text-[white] text-[1.3rem] font-medium focus:outline-none lg:hidden">
+            <div>
+                <button id="hamburger" class="text-[white] text-[1.3rem] pl-6 focus:outline-none lg:hidden">
                     <i class="fi fi-br-menu-burger"></i>
 
                 </button>
 
-                <ul class="backdrop-blur-3xl lg:backdrop-blur-none hidden flex flex-col   z-10 justify-between
-                    items-center gap-2 mt-[16px]
-                absolute w-auto h-[87vh] top-full p-[15px] lg:h-[52px]
+                <div class="absolute w-full backdrop-blur-3xl lg:backdrop-blur-none hidden flex flex-col   z-10 
+                    items-center  
+              h-[93vh] top-full p-[15px] lg:h-[52px]
               
                 lg:relative lg:flex lg:flex-row lg:gap-4 lg:items-center" id="mobile-menu">
                     <button id="boton-menu-cerrar"
                         class=" lg:hidden w-[320px] flex justify-end text-[white] text-[1rem] "><i
                             class="fi fi-br-cross"></i></button>
-                    <div class="w-auto h-[98%] justify-around lg:justify-start flex flex-col  -->
+                    <ul class="w-auto h-[98%] justify-around lg:justify-start flex flex-col  -->
                     items-center gap-2 lg:flex-row lg:h-[71px] w-[200px]">
                         <li>
-                            <a href="#quienSoy" class=" z-11 focus:ring-2 flex text    lg:text-white lg:w-[140px] gap-2
-                            lg:rounded-md px-3 py-2 font-bold lg:text-[1.1rem] lg:font-medium text-[1.5rem] text-[white]
+                            <a href="#quienSoy" class=" z-11 focus:ring-2 flex text    lg:text-white lg:w-[140px] 
+                            lg:rounded-md  font-bold lg:text-[1.1rem] lg:font-medium text-[1.5rem] text-[white]
                             hover:scale-125">
                                 <i class="fi fi-rr-chart-histogram "></i>
                                 Quien soy
                             </a>
                         </li>
                         <li>
-                            <a href="#misServicios" class=" z-11 focus:ring-2 flex text    lg:text-white lg:w-[140px] gap-2
-                            lg:rounded-md px-3 py-2 font-bold lg:text-[1.1rem] lg:font-medium text-[1.5rem]
+                            <a href="#misServicios" class=" z-11 focus:ring-2 flex text    lg:text-white lg:w-[140px] 
+                            lg:rounded-md   font-bold lg:text-[1.1rem] lg:font-medium text-[1.5rem]
                             text-[white] hover:scale-125">
                                 <i class=" fi fi-sr-tags"></i>
                                 Mis servicios
                             </a>
                         </li>
                         <li>
-                            <a href="#contacto" class=" z-11 focus:ring-2 flex text    lg:text-white lg:w-[140px] gap-2
-                            lg:rounded-md px-3 py-2 font-bold lg:text-[1.1rem] lg:font-medium text-[1.5rem]
+                            <a href="#contacto" class=" z-11 focus:ring-2 flex text    lg:text-white lg:w-[140px] 
+                            lg:rounded-md font-bold lg:text-[1.1rem] lg:font-medium text-[1.5rem]
                             text-[white] hover:scale-125">
                                 <i class=" fi fi-sr-chart-pie"></i>
                                 Contacto
                             </a>
                         </li>
-                    </div>
-                </ul>
+                    </ul>
+                </div>
+
             </div>
         </nav>
+
+    </header>
+    <main>
         <div class="flex flex-col items-center justify-center w-[40vh] h-[70vh] m-auto mt-[100px] gap-3
         ">
             <img src="./imagenes/omSinFondo.png" alt="" class="w-[100px] lg:w-[150px]">
@@ -79,8 +83,6 @@
                 Te invito a conocer las herramientas que brindamos tanto para tu sanación, como para tu desarrollo
                 personal y para que las puedas brindar vos también, mediante las formaciones.</p>
         </div>
-    </header>
-    <main>
         <section id="quienSoy">
 
         </section>
