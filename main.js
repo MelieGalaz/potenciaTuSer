@@ -74,39 +74,79 @@ document.getElementById("boton-menu-cerrar").addEventListener("click", () => {
 //   }
 // });
 
+// const whatsappIcon = document.getElementById("whatsapp-link");
+
+// whatsappIcon.addEventListener("mousemove", function (e) {
+//   whatsappIcon.classList.add("hover:text-fuchsia-500");
+//   for (let i = 0; i < 3; i++) {
+//     const mariposa = document.createElement("img");
+//     mariposa.src = "imagenes/mariposa5.gif"; // Ruta del archivo GIF de la mariposa
+//     mariposa.classList.add("mariposa5");
+//     mariposa.style.position = "fixed"; // Cambia la posición a fija para que esté relativa al viewport
+
+//     // Coordenadas del icono de WhatsApp
+//     const whatsappRect = whatsappIcon.getBoundingClientRect();
+//     const xPos = whatsappRect.left + whatsappRect.width / 2;
+//     const yPos = whatsappRect.top + whatsappRect.height / 2;
+
+//     // Calcula un ángulo aleatorio entre 0 y 360 grados
+//     const angle = Math.random() * 360;
+
+//     // Calcula las nuevas posiciones usando el ángulo y una distancia aleatoria
+//     const distance = Math.random() * 50 + 50; // Distancia entre 20 y 70 pixels
+//     const newX = xPos + distance * Math.cos(angle);
+//     const newY = yPos + distance * Math.sin(angle);
+
+//     mariposa.style.left = `${newX}px`; // Utiliza la posición de la página para fijar la posición de la mariposa
+//     mariposa.style.top = `${newY}px`;
+//     document.body.appendChild(mariposa); // Añade la mariposa al body para que aparezca por encima de otros elementos
+
+//     setTimeout(() => {
+//       mariposa.style.transform = "translate(-50%, -50%) scale(0.3)"; // Ajusta el tamaño de la mariposa
+//     }, 20);
+
+//     setTimeout(() => {
+//       mariposa.remove(); // Elimina la mariposa después de un tiempo
+//     }, 1000); // Cambia este valor para ajustar la duración de las mariposas
+//   }
+// });
+
 const whatsappIcon = document.getElementById("whatsapp-link");
 
 whatsappIcon.addEventListener("mousemove", function (e) {
-  whatsappIcon.classList.add("hover:text-fuchsia-500");
-  for (let i = 0; i < 3; i++) {
-    const mariposa = document.createElement("img");
-    mariposa.src = "imagenes/mariposa5.gif"; // Ruta del archivo GIF de la mariposa
-    mariposa.classList.add("mariposa5");
-    mariposa.style.position = "fixed"; // Cambia la posición a fija para que esté relativa al viewport
+  if (window.innerWidth > 768) {
+    // Verifica si el ancho de la ventana es mayor que el de un celular típico (768px)
+    whatsappIcon.classList.add("hover:text-fuchsia-500");
+    for (let i = 0; i < 3; i++) {
+      const mariposa = document.createElement("img");
+      mariposa.src = "imagenes/mariposa5.gif"; // Ruta del archivo GIF de la mariposa
+      mariposa.classList.add("mariposa5");
+      mariposa.style.position = "fixed"; // Cambia la posición a fija para que esté relativa al viewport
 
-    // Coordenadas del icono de WhatsApp
-    const whatsappRect = whatsappIcon.getBoundingClientRect();
-    const xPos = whatsappRect.left + whatsappRect.width / 2;
-    const yPos = whatsappRect.top + whatsappRect.height / 2;
+      // Coordenadas del icono de WhatsApp
+      const whatsappRect = whatsappIcon.getBoundingClientRect();
+      const xPos = whatsappRect.left + whatsappRect.width / 2;
+      const yPos = whatsappRect.top + whatsappRect.height / 2;
 
-    // Calcula un ángulo aleatorio entre 0 y 360 grados
-    const angle = Math.random() * 360;
+      // Calcula un ángulo aleatorio entre 0 y 360 grados
+      const angle = Math.random() * 360;
 
-    // Calcula las nuevas posiciones usando el ángulo y una distancia aleatoria
-    const distance = Math.random() * 50 + 50; // Distancia entre 20 y 70 pixels
-    const newX = xPos + distance * Math.cos(angle);
-    const newY = yPos + distance * Math.sin(angle);
+      // Calcula las nuevas posiciones usando el ángulo y una distancia aleatoria
+      const distance = Math.random() * 50 + 50; // Distancia entre 20 y 70 pixels
+      const newX = xPos + distance * Math.cos(angle);
+      const newY = yPos + distance * Math.sin(angle);
 
-    mariposa.style.left = `${newX}px`; // Utiliza la posición de la página para fijar la posición de la mariposa
-    mariposa.style.top = `${newY}px`;
-    document.body.appendChild(mariposa); // Añade la mariposa al body para que aparezca por encima de otros elementos
+      mariposa.style.left = `${newX}px`; // Utiliza la posición de la página para fijar la posición de la mariposa
+      mariposa.style.top = `${newY}px`;
+      document.body.appendChild(mariposa); // Añade la mariposa al body para que aparezca por encima de otros elementos
 
-    setTimeout(() => {
-      mariposa.style.transform = "translate(-50%, -50%) scale(0.3)"; // Ajusta el tamaño de la mariposa
-    }, 20);
+      setTimeout(() => {
+        mariposa.style.transform = "translate(-50%, -50%) scale(0.3)"; // Ajusta el tamaño de la mariposa
+      }, 20);
 
-    setTimeout(() => {
-      mariposa.remove(); // Elimina la mariposa después de un tiempo
-    }, 1000); // Cambia este valor para ajustar la duración de las mariposas
+      setTimeout(() => {
+        mariposa.remove(); // Elimina la mariposa después de un tiempo
+      }, 1000); // Cambia este valor para ajustar la duración de las mariposas
+    }
   }
 });
