@@ -10,13 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital@1&family=Roboto+Slab:wght@300&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="estilos.css">
     <title>Document</title>
 </head>
 
-<body class="bg-[url('imagenes/fondo2.jpg')] h-screen bg-center ">
+<body class="bg-[url('imagenes/fondo2.jpg')] h-screen bg-center bg-no-repeat">
     <header class="relative  ">
-        <nav class=" lg:backdrop-blur-3xl w-full flex items-center  shadow-2xl  h-[7vh] lg:h-24 lg:justify-between 
+        <nav class=" lg:backdrop-blur-3xl w-full flex items-center  shadow-2xl  h-[7vh] 
             ">
 
             <div>
@@ -25,36 +29,36 @@
 
                 </button>
 
-                <div class="absolute w-full backdrop-blur-3xl lg:backdrop-blur-none hidden flex flex-col   z-10 
+                <div class="absolute w-full backdrop-blur-3xl  hidden flex flex-col   z-10 
                     items-center  
               h-[93vh] top-full p-[15px] lg:h-[52px]
               
-                lg:relative lg:flex lg:flex-row lg:gap-4 lg:items-center" id="mobile-menu">
+                lg:relative lg:flex lg:flex-row " id="mobile-menu">
                     <button id="boton-menu-cerrar"
                         class=" lg:hidden w-[320px] flex justify-end text-[white] text-[1rem] "><i
                             class="fi fi-br-cross"></i></button>
-                    <ul class="w-auto h-[98%] justify-around lg:justify-start flex flex-col  -->
-                    items-center gap-2 lg:flex-row lg:h-[71px] w-[200px]">
+                    <ul class="w-auto h-[98%] justify-around flex flex-col  
+                    items-center gap-2 lg:flex-row lg:pl-6">
                         <li>
-                            <a href="#quienSoy" class=" z-11 focus:ring-2 flex text    lg:text-white lg:w-[140px] 
-                            lg:rounded-md  font-bold lg:text-[1.1rem] lg:font-medium text-[1.5rem] text-[white]
+                            <a href="#quienSoy" class=" z-11 focus:ring-2 inline-block lg:text-white lg:w-[140px] 
+                              font-bold lg:text-[1.1rem]  text-[1.5rem] text-[white]
                             hover:scale-125">
                                 <i class="fi fi-rr-chart-histogram "></i>
                                 Quien soy
                             </a>
                         </li>
                         <li>
-                            <a href="#misServicios" class=" z-11 focus:ring-2 flex text    lg:text-white lg:w-[140px] 
-                            lg:rounded-md   font-bold lg:text-[1.1rem] lg:font-medium text-[1.5rem]
-                            text-[white] hover:scale-125">
+                            <a href="#misServicios" class=" z-11 focus:ring-2 inline-block lg:text-white lg:w-[140px] 
+                              font-bold lg:text-[1.1rem]  text-[1.5rem] text-[white]
+                            hover:scale-125">
                                 <i class=" fi fi-sr-tags"></i>
                                 Mis servicios
                             </a>
                         </li>
                         <li>
-                            <a href="#contacto" class=" z-11 focus:ring-2 flex text    lg:text-white lg:w-[140px] 
-                            lg:rounded-md font-bold lg:text-[1.1rem] lg:font-medium text-[1.5rem]
-                            text-[white] hover:scale-125">
+                            <a href="#contacto" class=" z-11 focus:ring-2 inline-block lg:text-white lg:w-[140px] 
+                              font-bold lg:text-[1.1rem]  text-[1.5rem] text-[white]
+                            hover:scale-125">
                                 <i class=" fi fi-sr-chart-pie"></i>
                                 Contacto
                             </a>
@@ -70,10 +74,10 @@
         <div class="flex flex-col items-center justify-center w-[40vh] h-[70vh] m-auto mt-[100px] gap-3
         ">
             <img src="./imagenes/omSinFondo.png" alt="" class="w-[100px] lg:w-[150px]">
-            <h1 class="text-[2.5rem] text-[white] drop-shadow-2xl font-medium font-['Amaranth']">Potencia tu Ser</h1>
+            <h1 class="text-[2.5rem] text-[white] drop-shadow-md font-medium font-['Amaranth']">Potencia tu Ser</h1>
 
-            <h2 class="text-[1.7rem] text-[white] drop-shadow-2xl ">Espacio Holístico</h2>
-            <p class="text-[0.9rem] lg:text-[1rem] text-[white] drop-shadow-2xl text-center">Potencia tu Ser Espacio
+            <h2 class="text-[1.7rem] text-[white] drop-shadow-md ">Espacio Holístico</h2>
+            <p class="text-[0.9rem] lg:text-[1rem] text-[white] drop-shadow-md text-center">Potencia tu Ser Espacio
                 Holístico tiene
                 para
                 ofrecer
@@ -83,6 +87,13 @@
                 Te invito a conocer las herramientas que brindamos tanto para tu sanación, como para tu desarrollo
                 personal y para que las puedas brindar vos también, mediante las formaciones.</p>
         </div>
+        <button id="contenedor" class=" relative ml-[90%] items-end text-white font-bold text-end text-4xl lg:text-5xl
+            hover:text-fuchsia-500 ">
+            <a id="whatsapp-link" href="https://wa.me/2615347278" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </button>
+        <div id="butterflies" class="fixed mb-0 mr-0"></div>
         <section id="quienSoy">
 
         </section>
