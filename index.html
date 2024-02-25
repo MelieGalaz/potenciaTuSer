@@ -18,9 +18,9 @@
     <title>Document</title>
 </head>
 
-<body class="bg-[url('imagenes/fondo2.jpg')] h-screen bg-center bg-no-repeat">
-    <header class="relative  ">
-        <nav class=" lg:backdrop-blur-3xl w-full flex items-center  shadow-2xl  h-[7vh] 
+<body class="bg-[url('imagenes/fondo2.jpg')]  bg-center bg-no-repeat min-h-screen flex flex-col justify-between">
+    <header class="relative  lg:backdrop-blur-3xl shadow-2xl">
+        <nav class="  w-full flex items-center  shadow-inner  max-w-6xl m-auto
             ">
 
             <div>
@@ -31,34 +31,42 @@
 
                 <div class="absolute w-full backdrop-blur-3xl  hidden flex flex-col   z-10 
                     items-center  
-              h-[93vh] top-full p-[15px] lg:h-[52px]
+              h-[95vh] top-full p-[15px] lg:h-[52px]
               
                 lg:relative lg:flex lg:flex-row " id="mobile-menu">
                     <button id="boton-menu-cerrar"
                         class=" lg:hidden w-[320px] flex justify-end text-[white] text-[1rem] "><i
                             class="fi fi-br-cross"></i></button>
                     <ul class="w-auto h-[98%] justify-around flex flex-col  
-                    items-center gap-2 lg:flex-row lg:pl-6">
+                    items-center lg:flex-row lg:pl-6">
                         <li>
-                            <a href="#quienSoy" class=" z-11 focus:ring-2 inline-block lg:text-white lg:w-[140px] 
-                              font-bold lg:text-[1.1rem]  text-[1.5rem] text-[white]
-                            hover:scale-125 hover:duration-500">
+                            <a href="/index.html" class=" z-11 focus:ring-2 inline-block lg:text-white lg:w-[140px] 
+                              font-bold lg:text-[1.1rem] text-[1.5rem] text-[white] text-center
+                            hover:scale-125 duration-500">
+                                <i class=" fi fi-sr-tags"></i>
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/quiensoy.html" class=" z-11 focus:ring-2 inline-block lg:text-white lg:w-[140px] 
+                              font-bold lg:text-[1.1rem] text-[1.5rem] text-[white] text-center
+                            hover:scale-125 duration-500">
                                 <i class="fi fi-rr-chart-histogram "></i>
                                 Quien soy
                             </a>
                         </li>
                         <li>
-                            <a href="#misServicios" class=" z-11 focus:ring-2 inline-block lg:text-white lg:w-[140px] 
-                              font-bold lg:text-[1.1rem]  text-[1.5rem] text-[white]
-                            hover:scale-125 hover:duration-500">
+                            <a href="/misServicios.html" class=" z-11 focus:ring-2 inline-block lg:text-white lg:w-[140px] 
+                              font-bold lg:text-[1.1rem] text-[1.5rem] text-[white] text-center
+                            hover:scale-125 duration-500">
                                 <i class=" fi fi-sr-tags"></i>
                                 Mis servicios
                             </a>
                         </li>
                         <li>
-                            <a href="#contacto" class=" z-11 focus:ring-2 inline-block lg:text-white lg:w-[140px] 
-                              font-bold lg:text-[1.1rem]  text-[1.5rem] text-[white]
-                            hover:scale-125 hover:duration-500">
+                            <a href="/contacto.html" class=" z-11 focus:ring-2 inline-block lg:text-white lg:w-[140px] 
+                              font-bold lg:text-[1.1rem] text-[1.5rem] text-[white] text-center
+                            hover:scale-125 duration-500">
                                 <i class=" fi fi-sr-chart-pie"></i>
                                 Contacto
                             </a>
@@ -70,7 +78,7 @@
         </nav>
 
     </header>
-    <main>
+    <main class="max-w-5xl m-auto">
         <div class="flex flex-col items-center justify-center w-[40vh] h-[70vh] m-auto mt-[100px] gap-3
         ">
             <img src="./imagenes/omSinFondo.png" alt="" class="w-[100px] lg:w-[150px]">
@@ -94,17 +102,21 @@
             </a>
         </button>
         <div id="butterflies" class="fixed mb-0 mr-0"></div>
-        <section id="quienSoy">
 
-        </section>
-        <section id="misServicios">
-
-        </section>
-        <section id="contacto">
-
-        </section>
     </main>
 
+    <footer class=" backdrop-blur-3xl ">
+
+        <div class="flex gap-5  items-center justify-center  ">
+            <a
+                href="https://www.instagram.com/potenciatuser_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                    class="fa-brands fa-instagram text-white font-medium hover:text-fuchsia-500 text-xl"></i></a>
+
+            <a href="#"><i class="fa-regular fa-envelope text-white font-medium hover:text-fuchsia-500 text-xl"></i></a>
+        </div>
+        <h3 class=" text-[0.9rem] lg:text-[1rem] text-[white] drop-shadow-md text-center">Espacio Holístico</h3>
+        </div>
+    </footer>
 
 
 
