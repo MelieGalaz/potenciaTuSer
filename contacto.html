@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital@1&family=Roboto+Slab:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-violet-200  min-h-screen flex flex-col justify-between">
+    <header class="relative bg-[url('imagenes/fondo2.jpg')]  bg-center   ">
+        <nav class="  w-full flex items-center justify-between shadow-2xl  h-[7vh] max-w-6xl m-auto">
+
+            <button id="hamburger" class="text-[white] text-[1.3rem] pl-6 focus:outline-none lg:hidden">
+                <i class="fi fi-br-menu-burger"></i>
+
+            </button>
+            <div class="flex items-center lg:pl-6 gap-[5px] lg:w-80 pr-5 contenedor ">
+                <img src="./imagenes/omSinFondo.png" alt="" class="w-[41px]  lg:w-[48px]">
+                <h3 class=" text-xl lg:text-[1.3rem] text-[white] drop-shadow-md text-center font-bold">Potencia
+                    tu
+                    Ser
+                </h3>
+            </div>
+
+            <div class="absolute w-full bg-[url('imagenes/fondo2.jpg')]  lg:bg-none bg-center  hidden flex flex-col   z-10 
+                    items-center  
+              h-[93vh] top-full p-[15px] lg:h-[52px]
+              
+                lg:static lg:flex lg:flex-row lg:justify-end" id="mobile-menu">
+                <button id="boton-menu-cerrar"
+                    class=" lg:hidden w-[320px] flex justify-end text-violet-800 text-[1rem] "><i
+                        class="fi fi-br-cross"></i></button>
+                <ul class="w-auto h-[98%] justify-around flex flex-col  
+                    items-center lg:flex-row lg:pl-6 ">
+                    <li>
+                        <a href="./index.html" class=" z-11 focus:ring-2 inline-block lg:text-white lg:w-[140px] 
+                              font-bold lg:text-[1.1rem] text-[1.5rem] text-[white] text-center
+                            hover:scale-125 duration-500">
+                            <i class=" fi fi-sr-tags"></i>
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./quiensoy.html" class=" z-11 focus:ring-2 inline-block lg:text-white lg:w-[140px] 
+                              font-bold lg:text-[1.1rem] text-[1.5rem] text-[white] text-center
+                            hover:scale-125 duration-500">
+                            <i class="fi fi-rr-chart-histogram "></i>
+                            Quien soy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./misServicios.html" class=" z-11 focus:ring-2 inline-block lg:text-white lg:w-[140px] 
+                              font-bold lg:text-[1.1rem] text-[1.5rem] text-[white] text-center
+                            hover:scale-125 duration-500">
+                            <i class=" fi fi-sr-tags"></i>
+                            Mis servicios
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contacto.html" class=" z-11 focus:ring-2 inline-block lg:text-white lg:w-[140px] 
+                              font-bold lg:text-[1.1rem] text-[1.5rem] text-[white] text-center
+                            hover:scale-125 duration-500">
+                            <i class=" fi fi-sr-chart-pie"></i>
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <h1>contacto</h1>
+    </main>
+    <footer class=" bg-[url('imagenes/fondo2.jpg')]  bg-center  ">
+
+        <div class="flex gap-5  items-center justify-center  ">
+            <a href="https://www.instagram.com/potenciatuser_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"><i
+                    class="fa-brands fa-instagram text-white font-medium hover:text-fuchsia-500 text-xl"></i></a>
+
+            <a href=" #"><i
+                    class="fa-regular fa-envelope text-white font-medium hover:text-fuchsia-500 text-xl"></i></a>
+        </div>
+        <h3 class=" text-[0.9rem] lg:text-[1rem] text-[white] drop-shadow-md text-center">Espacio Holístico</h3>
+        </div>
+    </footer>
+
+
+
+    <script src=" main.js">
+    </script>
+</body>
+
+</html>
